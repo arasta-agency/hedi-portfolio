@@ -8,33 +8,44 @@
       name="description"
       content="Computer Engineer (M.Eng.) and researcher in machine learning, graph signal processing, and computer vision."
     />
+    <meta property="og:title" content="Hedi Agha Hassan — Computer Engineer &amp; Researcher" />
+    <meta
+      property="og:description"
+      content="Computer Engineer (M.Eng.) and researcher in machine learning, graph signal processing, and computer vision."
+    />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Ambient Particle Field & Backdrop Atmosphere -->
     <canvas id="field" aria-hidden="true"></canvas>
     <div class="noise" aria-hidden="true"></div>
+    <div class="ambient-glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow-2" aria-hidden="true"></div>
 
+    <!-- Top Bar Contract: 3 distinct zones separated by gap-8 -->
     <header class="nav">
-      <a class="logo" href="#top">HAH</a>
-      <nav>
+      <a class="logo" href="#top">
+        Hedi Agha Hassan <span>/ M.Eng.</span>
+      </a>
+      <nav aria-label="Main Navigation">
         <a href="#about">About</a>
-        <a href="#work">Work</a>
+        <a href="#work">Experience</a>
         <a href="#research">Research</a>
         <a href="#skills">Skills</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
+        <a href="#awards">Honours</a>
       </nav>
-      <a class="nav-cta" href="mailto:hedi.hassan28@gmail.com">Write</a>
+      <a class="nav-cta" href="#contact">Get in touch</a>
     </header>
 
     <main id="top">
+      <!-- Hero Section -->
       <section class="hero">
         <div class="hero-copy">
           <p class="kicker">Raparin · Sulaymaneyah · Wrocław</p>
@@ -45,35 +56,49 @@
             <em>computer vision</em>.
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#work">See the path</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/hedi-hassan0/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn primary" href="#research">Explore Research</a>
+            <a class="btn ghost" href="#skills">Interactive Skill Graph</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/hedi-hassan0/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
           </div>
           <dl class="stats">
             <div>
-              <dt>M.Eng. ICT</dt>
+              <dt>M.Eng. Degree</dt>
               <dd>5.5 / 5.5</dd>
             </div>
             <div>
-              <dt>NAWA</dt>
+              <dt>NAWA Fellow</dt>
               <dd>Banach Scholar</dd>
             </div>
             <div>
-              <dt>Top 1</dt>
-              <dd>International ICT 25</dd>
+              <dt>WUST Award</dt>
+              <dd>Top 1 Student</dd>
+            </div>
+            <div>
+              <dt>Living Graph</dt>
+              <dd>24 Skills</dd>
             </div>
           </dl>
         </div>
+
         <div class="orbit" aria-hidden="true">
           <span class="ring"></span>
           <span class="ring r2"></span>
-          <span class="core">HAH</span>
-          <span class="sat s1">ML</span>
-          <span class="sat s2">GSP</span>
-          <span class="sat s3">CV</span>
-          <span class="sat s4">XAI</span>
+          <span class="ring r3"></span>
+          <div class="core-wrap">
+            <span class="core">HAH</span>
+            <span class="core-sub">SYSTEMS &amp; AI</span>
+          </div>
+          <span class="sat s1">ML · Benchmarking</span>
+          <span class="sat s2">GSP · Graph Signals</span>
+          <span class="sat s3">CV · OCR Vision</span>
+          <span class="sat s4">XAI · Interpretability</span>
+          <span class="sat s5">HPC · Linux &amp; C++</span>
         </div>
       </section>
 
+      <!-- About Section -->
       <section id="about" class="panel">
         <div class="section-head">
           <span class="idx">01</span>
@@ -81,42 +106,60 @@
         </div>
         <p class="prose">
           I benchmark deep learning architectures, evaluate model interpretability (XAI),
-          and build computational pipelines for complex structural data. Alongside research,
-          I lead technical initiatives, facilitate university teaching, and design curricula —
-          bridging advanced AI with engineering that actually ships.
+          and build computational pipelines for complex structural data. Alongside empirical research,
+          I lead technical initiatives, facilitate university computer science teaching, and design
+          didactic curricula — bridging mathematically rigorous AI with software engineering that actually ships.
         </p>
-        <div class="chip-row">
-          <span>Machine learning</span>
-          <span>Graph signal processing</span>
-          <span>Computer vision</span>
-          <span>XAI</span>
-          <span>Curriculum design</span>
+        <div class="metadata-strip">
+          <strong>Core Specializations</strong>
+          <span>Deep Learning Benchmarking</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span>Graph Signal Processing</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span>Computer Vision &amp; OCR</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span>Explainable AI (XAI)</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span>Higher Education Pedagogy</span>
         </div>
       </section>
 
+      <!-- Experience Section -->
       <section id="work" class="panel">
         <div class="section-head">
           <span class="idx">02</span>
           <h2>Experience</h2>
         </div>
         <div class="timeline">
-          <article class="card" data-reveal>
+          <article class="card">
             <header>
               <h3>IT &amp; Software Developer Intern</h3>
               <time>Aug 2025 — Feb 2026</time>
             </header>
             <p class="place">Dpoint Group · Barcelona, Spain</p>
-            <p>Software and IT internship with a product-minded engineering team in Barcelona.</p>
+            <p>Software engineering and IT systems development within a high-paced product engineering team.</p>
+            <ul class="card-bullets">
+              <li>Engineered software features, internal workflow automations, and backend data services.</li>
+              <li>Collaborated on distributed web software, containerization workflows, and code review routines.</li>
+              <li>Optimized system deployment reliability and streamlined cross-functional developer operations.</li>
+            </ul>
           </article>
-          <article class="card" data-reveal>
+
+          <article class="card">
             <header>
               <h3>Field Engineer — IT Technical Support</h3>
               <time>Apr 2025 — May 2025</time>
             </header>
             <p class="place">MBMPL (Mercedes-Benz Manufacturing Poland) · Wrocław</p>
-            <p>On-site technical support in a high-reliability manufacturing environment.</p>
+            <p>On-site mission-critical technical infrastructure support in an automated automotive production facility.</p>
+            <ul class="card-bullets">
+              <li>Maintained high-reliability production lines, industrial workstations, and network hardware.</li>
+              <li>Diagnosed real-time hardware faults and resolved operational interruptions under strict SLA targets.</li>
+              <li>Coordinated with international engineering teams to uphold stringent automotive safety and IT standards.</li>
+            </ul>
           </article>
-          <article class="card" data-reveal>
+
+          <article class="card">
             <header>
               <h3>Teacher Assistant</h3>
               <time>Nov 2022 — Jun 2023</time>
@@ -125,127 +168,281 @@
               <a href="https://univsul.edu.iq/en/" target="_blank" rel="noreferrer">University of Sulaimani</a>
               · College of Science
             </p>
-            <p>Facilitated teaching and student support in computer science.</p>
+            <p>Facilitated undergraduate laboratory teaching, coursework tutoring, and academic assessment.</p>
+            <ul class="card-bullets">
+              <li>Conducted hands-on lab sessions covering core computer science algorithms and programming principles.</li>
+              <li>Mentored students in debugging, structured problem solving, and computational thinking.</li>
+              <li>Assisted professors in grading laboratory assignments, developing tutorials, and curriculum planning.</li>
+            </ul>
           </article>
         </div>
       </section>
 
+      <!-- Research & Publications Section -->
       <section id="research" class="panel">
         <div class="section-head">
           <span class="idx">03</span>
-          <h2>Research &amp; training</h2>
+          <h2>Research &amp; Publications</h2>
         </div>
-        <article class="featured" data-reveal>
-          <p class="eyebrow">Publication · 2026</p>
-          <h3>Comparative Evaluation of Text Detection and Extraction Methods for Use in Comics</h3>
-          <p>Hedi Hassan · Marek Woda</p>
-        </article>
+
+        <div class="research-featured-wrap">
+          <!-- Featured Paper -->
+          <article class="featured-research">
+            <div class="featured-research-split">
+              <div class="research-visual-wrap">
+                <img
+                  src="/src/assets/images/research_comics_extraction_1791580305393.jpg"
+                  alt="Diagram of deep learning text detection and extraction stages"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="research-info">
+                <p class="eyebrow">Peer-Reviewed Publication · 2026</p>
+                <h3>Comparative Evaluation of Text Detection and Extraction Methods for Use in Comics</h3>
+                <p class="research-authors">Hedi Hassan · Marek Woda</p>
+                <p class="research-venue">
+                  21st Int. Conference on Dependability of Computer Systems (DepCoS-RELCOMEX 2026) · Wrocław
+                </p>
+                <p class="research-abstract">
+                  A comprehensive benchmark evaluating state-of-the-art text detection and OCR pipelines (CRAFT, DBNet, YOLO variants, EasyOCR) on the complex typography, speech balloons, and dense visual layouts of graphic novels.
+                </p>
+                <div id="paper-abstract-content" class="abstract-drawer hidden">
+                  <p><strong>Abstract:</strong> Text extraction from comics presents unique challenges due to irregular typography, non-rectangular bounding boxes, sound effects integrated into artwork, and varied reading orders. This paper establishes a reproducible benchmarking framework comparing character-level, word-level, and segmentation-based deep architectures to identify optimal configurations for automated semantic parsing.</p>
+                </div>
+                <button type="button" id="toggle-abstract-btn" class="toggle-abstract-btn">
+                  Read paper abstract &amp; methodology
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
         <div class="grid two">
-          <article class="card" data-reveal>
+          <article class="card">
             <h3>Education</h3>
             <ul class="list">
               <li>
                 <strong>Professional Pedagogy &amp; Teacher Training</strong>
                 University of Raparin · Jul 2026 — Present
+                <br /><span class="meta">Higher Education Curriculum Design &amp; Didactics</span>
               </li>
               <li>
-                <strong>M.Eng. Computer Engineering</strong>
-                Wrocław University of Science and Technology · 2024 — 2025 · 5.5/5.5
+                <strong>M.Eng. Computer Engineering (ICT)</strong>
+                Wrocław University of Science and Technology · 2024 — 2025
+                <br /><span class="meta">Distinction Grade: 5.5 / 5.5 · Top 1 International Student</span>
               </li>
               <li>
                 <strong>B.Sc. Computer Science</strong>
-                University of Sulaimani · 2018 — 2022 · 82/100
+                University of Sulaimani · 2018 — 2022
+                <br /><span class="meta">Grade: 82 / 100 · College of Science</span>
               </li>
             </ul>
           </article>
-          <article class="card" data-reveal>
-            <h3>Conferences &amp; certificates</h3>
+
+          <article class="card">
+            <h3>Conferences &amp; Certificates</h3>
             <ul class="list">
-              <li>21st Int. Conference on Dependability of Computer Systems · Wrocław, 2026</li>
-              <li>GPson2M — German–Polish Young Researchers School on Mathematics and Mechanics · 2025</li>
-              <li>AI and Cybersecurity in EU · University of León · blended, 2025</li>
-              <li>Polish Language and Culture · NCU Toruń · 2025</li>
-              <li>English Language Certificate (Advanced) · IEUK · 2026</li>
+              <li>
+                <strong>21st Int. Conference on Dependability of Computer Systems</strong>
+                Wrocław, Poland · 2026 · DepCoS-RELCOMEX
+              </li>
+              <li>
+                <strong>GPson2M Young Researchers School</strong>
+                Mathematics &amp; Mechanics · German–Polish Initiative · 2025
+              </li>
+              <li>
+                <strong>AI and Cybersecurity in the European Union</strong>
+                University of León (Spain) · Blended Intensive Programme · 2025
+              </li>
+              <li>
+                <strong>Polish Language &amp; Culture Certificate</strong>
+                Nicolaus Copernicus University in Toruń (NCU) · 2025
+              </li>
+              <li>
+                <strong>English Language Certificate (Advanced C1)</strong>
+                IEUK · 2026
+              </li>
             </ul>
           </article>
         </div>
       </section>
 
+      <!-- Skills Section: The Living Graph -->
       <section id="skills" class="panel">
         <div class="section-head">
           <span class="idx">04</span>
-          <h2>A living skill graph</h2>
+          <h2>A living skill constellation</h2>
         </div>
-        <p class="hint">Hover or focus a node to isolate its neighborhood.</p>
-        <div class="graph-wrap">
-          <div id="skill-graph" role="img" aria-label="Interactive skill graph"></div>
-          <aside id="skill-detail">
-            <p class="eyebrow">Focus</p>
-            <h3 id="skill-title">Pick a node</h3>
-            <p id="skill-copy">Each cluster is a working language of the research: data, models, people, and plans.</p>
+        <p class="prose">
+          An interactive topology of 24 interdisciplinary capabilities spanning machine learning architectures,
+          systems software, spectral mathematics, and pedagogical leadership. Hover or select any node to inspect
+          its neighborhood, applied projects, and tooling.
+        </p>
+
+        <!-- Interactive Controls Bar -->
+        <div class="skills-controls-bar">
+          <div class="filter-group" role="tablist" aria-label="Skill Cluster Filters">
+            <button type="button" class="skill-filter-btn active" data-filter="all">All Skills (24)</button>
+            <button type="button" class="skill-filter-btn" data-filter="ai">AI &amp; Vision (6)</button>
+            <button type="button" class="skill-filter-btn" data-filter="sys">Systems &amp; Code (6)</button>
+            <button type="button" class="skill-filter-btn" data-filter="math">Math &amp; Data (6)</button>
+            <button type="button" class="skill-filter-btn" data-filter="lead">Pedagogy &amp; Leadership (6)</button>
+          </div>
+
+          <div class="search-view-wrap">
+            <div class="search-box">
+              <input
+                type="text"
+                id="skill-search"
+                placeholder="Search 24 skills..."
+                aria-label="Search skills"
+              />
+            </div>
+            <div class="view-mode-toggle" role="group" aria-label="View Mode">
+              <button type="button" id="view-mode-constellation" class="active">Graph</button>
+              <button type="button" id="view-mode-matrix">Matrix</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Graph View Mode -->
+        <div class="constellation-wrap">
+          <div id="skill-graph" role="region" aria-label="Interactive skill graph constellation"></div>
+
+          <aside id="skill-detail" aria-live="polite">
+            <p id="skill-group" class="eyebrow group-tag-ai">AI &amp; Deep Learning</p>
+            <h3 id="skill-title">Machine Learning</h3>
+            <p id="skill-copy">
+              Benchmarking architectures across deep neural networks, measuring inductive biases, generalization metrics, and training dynamics.
+            </p>
+
+            <p class="detail-section-title">Proficiency &amp; Focus</p>
+            <p id="skill-proficiency" class="detail-value">Advanced · Research Level</p>
+
+            <p class="detail-section-title">Applied In</p>
+            <p id="skill-applied" class="detail-value">M.Eng. Thesis &amp; DepCoS-RELCOMEX 2026 Publication</p>
+
+            <p class="detail-section-title">Core Tooling &amp; Stack</p>
+            <div id="skill-tools" class="tools-wrap"></div>
+
+            <p class="detail-section-title">Connected Network Nodes</p>
+            <div id="skill-neighbors-list" class="neighbors-wrap"></div>
           </aside>
         </div>
+
+        <!-- Matrix Grid View Mode -->
+        <div id="skill-matrix"></div>
+
+        <!-- Languages Strip -->
         <div class="langs">
-          <div>
+          <div class="lang-card">
             <h3>Kurdish</h3>
-            <p>Mother tongue</p>
+            <p>Native / Mother tongue</p>
             <div class="bars full"></div>
           </div>
-          <div>
+          <div class="lang-card">
             <h3>English · C1</h3>
-            <p>Listen · Read · Write · Speak</p>
+            <p>Advanced Academic &amp; Research</p>
             <div class="bars c1"></div>
           </div>
-          <div>
+          <div class="lang-card">
             <h3>Arabic</h3>
-            <p>Read C1 · others B2</p>
+            <p>Read C1 · Spoken / Written B2</p>
             <div class="bars mixed"></div>
+          </div>
+          <div class="lang-card">
+            <h3>Polish</h3>
+            <p>A2/B1 · NCU Toruń Certified</p>
+            <div class="bars a2"></div>
           </div>
         </div>
       </section>
 
+      <!-- Honours & Awards Section -->
       <section id="awards" class="panel">
         <div class="section-head">
           <span class="idx">05</span>
-          <h2>Honours</h2>
+          <h2>Honours &amp; Fellowships</h2>
         </div>
-        <div class="grid two">
-          <article class="award" data-reveal>
-            <span>2024</span>
+        <div class="award-grid">
+          <article class="award">
+            <span>2024 — 2025</span>
             <h3>Stefan Banach Scholarship</h3>
-            <p>Polish National Agency for Academic Exchange (NAWA)</p>
+            <p>
+              Awarded by the Polish National Agency for Academic Exchange (NAWA) to top-tier international scholars for exceptional academic achievement and engineering promise.
+            </p>
           </article>
-          <article class="award" data-reveal>
-            <span>2025</span>
-            <h3>Top 1 International Student</h3>
-            <p>College of Information and Communication Technology, WUST · 2024–2025</p>
+          <article class="award">
+            <span>2024 — 2025</span>
+            <h3>Top 1 International Student Award</h3>
+            <p>
+              Ranked first among all international graduate students in the Faculty of Information and Communication Technology, Wrocław University of Science and Technology (GPA 5.5 / 5.5).
+            </p>
           </article>
         </div>
       </section>
 
+      <!-- Contact Section -->
       <section id="contact" class="panel contact">
         <div class="section-head">
           <span class="idx">06</span>
           <h2>Let’s build something rigorous</h2>
         </div>
-        <p class="prose">Open to research collaboration, teaching, and engineering roles that mix theory with systems.</p>
-        <div class="contact-grid">
-          <a href="mailto:hedi.hassan28@gmail.com">hedi.hassan28@gmail.com</a>
-          <a href="tel:+9647510615254">+964 751 061 5254</a>
-          <a href="https://www.linkedin.com/in/hedi-hassan0/" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
-        <p class="recs">
-          References: Dr. Mohammed Q. Kheder ·
-          <a href="mailto:mohammed.kheder@univsul.edu.iq">mohammed.kheder@univsul.edu.iq</a>
-          · Dr. Marek Woda ·
-          <a href="mailto:marek.woda@pwr.edu.pl">marek.woda@pwr.edu.pl</a>
+        <p class="prose">
+          Open to research collaboration, university teaching, machine learning engineering,
+          and doctoral / computational systems roles that combine theoretical rigor with scalable implementation.
         </p>
+
+        <div class="contact-module">
+          <div class="contact-channels">
+            <div class="channel-card">
+              <dt>Direct Email</dt>
+              <dd>
+                <a href="mailto:hedi.hassan28@gmail.com">hedi.hassan28@gmail.com</a>
+              </dd>
+              <div>
+                <button type="button" id="copy-email-btn" class="copy-btn">Copy Email</button>
+                <span id="copy-toast" class="copy-toast">Copied to clipboard!</span>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <dt>Phone &amp; WhatsApp</dt>
+              <dd>
+                <a href="tel:+9647510615254">+964 751 061 5254</a>
+              </dd>
+            </div>
+
+            <div class="channel-card">
+              <dt>Professional Network</dt>
+              <dd>
+                <a href="https://www.linkedin.com/in/hedi-hassan0/" target="_blank" rel="noreferrer">
+                  linkedin.com/in/hedi-hassan0
+                </a>
+              </dd>
+            </div>
+          </div>
+
+          <div class="recs">
+            <strong>Academic &amp; Research References:</strong>
+            <br />
+            Dr. Mohammed Q. Kheder · College of Science, University of Sulaimani ·
+            <a href="mailto:mohammed.kheder@univsul.edu.iq">mohammed.kheder@univsul.edu.iq</a>
+            <br />
+            Dr. Marek Woda · Faculty of ICT, Wrocław University of Science and Technology ·
+            <a href="mailto:marek.woda@pwr.edu.pl">marek.woda@pwr.edu.pl</a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 Hedi Agha Hassan · designed as a graph, not a résumé dump</p>
+      <p>© 2026 Hedi Agha Hassan · Computer Engineer &amp; Researcher</p>
+      <p>
+        <a href="#top">Back to top ↑</a>
+      </p>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>
